@@ -1,0 +1,80 @@
+@import 'vars'
+@import 'fonts'
+@import 'reset'
+@import 'libs'
+@import 'global'
+
+.main
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+.loading
+  display: flex
+  width: 100%
+  align-items: center
+  justify-content: center
+
+.weather
+  font-family: 'Poppins'
+  max-width: 500px
+  width: 100%
+  padding: 0 15px
+  &__choose
+    color: #fff
+    font-size: 20px
+    text-align: center
+    width: 100%
+  &__body
+    width: 100%
+    background-color: #1E6CE8
+    padding: 15px 15px
+    border-radius: 5px
+    margin: 10px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &__location, &__temp, &__feels-like, &__state
+    color: #fff
+  &__btns
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__btn
+    background-color: #1e6ce8
+    border-radius: 5px
+    color: #fff
+    border: none
+    text-align: center
+    max-width: 23%
+    width: 100%
+    padding: 10px 10px
+    cursor: pointer
+    &:hover
+      background-color: #14ACFF
+  &__more-info
+    width: 100%
+    text-align: right
+    transition: .6s
+
+    &-btn
+      padding: 5px 0
+      border-radius: 5px
+      display: none
+      border: none
+      color: #fff
+      cursor: pointer
+      margin-bottom: 10px
+      background-color: #1e6ce8
+      width: 100%
+
+  &__wind
+    &-direction, &-speed
+      color: #fff
+  &__sea-level
+    color: #fff
+
+.active
+  background-color: #1432FF
