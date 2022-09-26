@@ -30,9 +30,9 @@ buttons.addEventListener("click", async function (event) {
 
     console.log("OK!");
     console.log(event.target.innerText);
-    const data = await getWeather(event.target.innerText);
+    const data = await getWeather(event.target.dataset.location);
     if (data === false) {
-      weatherBody.innerHTML = "Error suka!!((";
+      weatherBody.innerHTML = "Server Error!!((";
     } else {
       console.log(data);
 
